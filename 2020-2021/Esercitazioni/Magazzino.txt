@@ -1,0 +1,6 @@
+5
+A075 Bicicletta 200.00
+A023 Motocicletta 1200.00
+A004 Scooter 500.00
+A015 Pedale 22.50
+A036 Manubrio 15.30
