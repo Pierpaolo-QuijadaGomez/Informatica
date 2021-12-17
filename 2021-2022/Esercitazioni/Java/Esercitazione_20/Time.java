@@ -50,6 +50,26 @@ public class Time {
             ore = ore - 24;
     }
 
+    public void subTime(Time t) {
+        ore = ore - t.getOre();
+        minuti = minuti - t.getMinuti();
+        secondi = secondi - t.getSecondi();
+        if (secondi < 0) {
+            minuti--;
+            secondi = 60 + secondi;
+        }
+
+        if (minuti < 0) {
+            ore--;
+            minuti = 60 + minuti;
+        }
+
+        if (ore < 0) {
+            ore = 24 + ore;
+        }
+
+    }
+
     public String toString() {
         String s = "";
         s = s + "Ore: " + getOre() + " \nMinuti: " + getMinuti() + " \nSecondi: " + getSecondi();
