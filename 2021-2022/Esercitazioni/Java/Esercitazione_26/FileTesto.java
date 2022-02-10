@@ -1,10 +1,12 @@
 public class FileTesto {
     String nomeFile;
 
+    // mtodo costruttore
     public FileTesto(String nome) {
         nomeFile = nome;
     }
 
+    // creo gli oggetti per la lettura e scritture del file
     public String Crea() {
         try {
             FileWriter out = new FileWriter(nomeFile);
@@ -16,6 +18,7 @@ public class FileTesto {
         }
     }
 
+    // carico la parola data al metodo come parametro
     public int aggiungi(String parola) {
         try {
             FileWriter out = new FileWriter(nomeFile, true);
@@ -28,6 +31,8 @@ public class FileTesto {
         }
     }
 
+    // apro il file e conto le parole per poi chiuderlo e restituire un numero
+    // intero
     public int contaParole() {
         String parola;
         int n = 0;
@@ -46,6 +51,7 @@ public class FileTesto {
         }
     }
 
+    // apro il file e copio il suo contenuto per poi restituirlo al main
     public String leggiFile() {
         String str = "";
         String parola = "";
