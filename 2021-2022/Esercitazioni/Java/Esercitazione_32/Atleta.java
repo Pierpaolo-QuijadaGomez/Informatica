@@ -1,12 +1,12 @@
 public class Atleta {
     private String nome;
     private int punt;
-    private Atleta next; //
+    private Atleta next; // dichiaro i tre attributi della classe Atleta
 
     public Atleta(String nome, int punt) {
         this.nome = nome;
         this.punt = punt;
-        next = null; //
+        next = null; // inizializzo il puntatore next al vaore null
     }
 
     public String getNome() {

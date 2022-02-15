@@ -20,12 +20,12 @@ public class Main {
                     nome = tastiera.next();
                     System.out.println("Inserisci punti atleta: ");
                     punt = tastiera.nextInt();
-                    p.push(nome, punt); //
+                    p.push(nome, punt); // chiamo il metodo push a cui passo il nome e il punteggio
                     break;
                 case 2:
                     System.out.println("Inserisci nome dell'atleta da eliminare: ");
                     nome = tastiera.next();
-                    System.out.println(p.pop(nome)); //
+                    System.out.println(p.pop(nome)); // stampo il return del metodo pop
                     break;
                 case 3:
                     System.out.println(p.toString());
